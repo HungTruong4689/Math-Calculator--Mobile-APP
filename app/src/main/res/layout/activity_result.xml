@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".result"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="131dp"
+        android:text="Congratulations"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="383dp"
+        android:layout_height="86dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="51dp"
+        android:text="Score:20"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/playAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Play Again" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Exit" />
+    </LinearLayout>
+
+
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/celebrationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
